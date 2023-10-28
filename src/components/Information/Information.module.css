@@ -1,0 +1,38 @@
+.information {
+  width: 510px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.5));
+  border-radius: 30px;
+  background: #d9d9d9;
+}
+
+.information h4 {
+  color: #292929;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.information h3 {
+  color: #292929;
+  font-family: Poppins;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.information p {
+  color: #292929;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

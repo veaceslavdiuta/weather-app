@@ -1,0 +1,33 @@
+.weatherApp {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(113deg, #fff 0.28%, rgba(70, 97, 115, 0) 178.65%);
+}
+
+.weatherAppContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 49px;
+  max-width: 1512px;
+  width: 100%;
+  margin-top: 63px;
+  margin-bottom: 63px;
+  height: auto;
+  background: linear-gradient(113deg, #fff 0.28%, rgba(70, 97, 115, 0) 178.65%);
+}
+
+.firstSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.secondSide {
+  display: flex;
+  justify-content: center;
+  gap: 61px;
+}
+
+

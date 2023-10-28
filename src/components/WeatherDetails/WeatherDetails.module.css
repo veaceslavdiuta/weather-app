@@ -1,0 +1,149 @@
+.weatherDetails {
+  width: 790px;
+  height: 330px;
+  box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  background: #d9d9d9;
+  display: flex;
+  padding: 20px;
+}
+
+.mainDetails {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.mainDetails h4 {
+  font-family: Poppins;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(
+    80deg,
+    #292929 -2.93%,
+    rgba(255, 255, 255, 0) 212.44%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mainDetails p {
+  color: #292929;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.mainDetails p span {
+  color: #292929;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.sunsetSunrise {
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+}
+
+.sunsetSunrise img {
+  width: 48px;
+  height: 48px;
+}
+
+.textTime {
+  display: flex;
+  flex-direction: column;
+}
+
+.textTime h5 {
+  color: #292929;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.textTime p {
+  color: #292929;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.weatherIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.weatherIcon h4 {
+  color: #292929;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.weatherIcon img {
+  width: 270px;
+  height: 270px;
+}
+
+.extraDetails {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  row-gap: 30px;
+  width: 50%;
+}
+
+.details {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.details img {
+  width: 58px;
+  height: 58px;
+}
+
+.details h5 {
+  color: #292929;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.details p {
+  color: #292929;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}

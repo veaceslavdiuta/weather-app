@@ -1,0 +1,51 @@
+.fiveDaysForecast {
+  width: 414px;
+  height: 410px;
+  border-radius: 30px;
+  background: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.5));
+}
+
+.fiveDaysForecast h3 {
+  color: #292929;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.days {
+  display: flex;
+  align-items: center;
+  gap: 43px;
+}
+
+.days h5 {
+  color: #292929;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.days p {
+  color: #292929;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.days img {
+  width: 70px;
+  height: 70px;
+}
