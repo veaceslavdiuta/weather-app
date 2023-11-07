@@ -11,19 +11,13 @@ function WeatherDetails(props) {
     const temp = Math.round(props.data.list[0].main.temp);
     const feelsLike = Math.round(props.data.list[0].main.feels_like);
 
-    const getAMPM = (hours) => {
-        return hours >= 12 ? 'PM' : 'AM';
-    };
-    
     const sunrise = new Date(props.data.city.sunrise * 1000);
     const sunriseHours = sunrise.getHours();
     const sunriseMinutes = sunrise.getMinutes();
-    const sunriseAMPM = getAMPM(sunriseHours);
 
     const sunset = new Date(props.data.city.sunset * 1000);
     const sunsetHours = sunset.getHours();
     const sunsetMinutes = sunset.getMinutes();
-    const sunsetAMPM = getAMPM(sunsetHours);
 
     return (
         <div className={classes.weatherDetails}>
@@ -39,7 +33,7 @@ function WeatherDetails(props) {
 
                     <div className={classes.textTime}>
                         <h5>Sunrise</h5>
-                        <p>{sunriseHours}:{sunriseMinutes} {sunriseAMPM}</p>
+                        <p>{sunriseHours}:{sunriseMinutes}</p>
                     </div>
                 </div>
 
@@ -48,13 +42,13 @@ function WeatherDetails(props) {
 
                     <div className={classes.textTime}>
                         <h5>Sunset</h5>
-                        <p>{sunsetHours}:{sunsetMinutes} {sunsetAMPM}</p>
+                        <p>{sunsetHours}:{sunsetMinutes}</p>
                     </div>
                 </div>
             </div>
 
             <div className={classes.weatherIcon}>
-                <img src={`https://openweathermap.org/img/wn/${props.data.list[0].weather[0].icon}@2x.png`} alt="imgWeatherIcon" />
+                <img src={`https://openweathermap.org/img/wn/${props.data.list[0].weather[0].icon}@4x.png`} alt="imgWeatherIcon" />
 
                 <h4>{props.data.list[0].weather[0].main}</h4>
             </div>

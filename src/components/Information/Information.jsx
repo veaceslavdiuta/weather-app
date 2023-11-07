@@ -1,4 +1,3 @@
-// import { useState } from "react";
 import classes from "./Information.module.css";
 
 function Information(props) {
@@ -11,11 +10,16 @@ function Information(props) {
     const dayNumber = date.getDay();
     const dayName = daysOfWeek[dayNumber];
 
+    const hour = date.getHours();
+    const minutes = date.getMinutes();
+    const formattedHour = (hour < 10) ? '0' + hour : hour;
+    const formattedMinutes = (minutes < 10) ? '0' + minutes : minutes;
+
     return (
         <div className={classes.information}>
-            <h4>{props.data.city.name }</h4>
+            <h4>{props.data.city.name}</h4>
 
-            <h3>20:20</h3>
+            <h3>{formattedHour}:{formattedMinutes}</h3>
 
             <p>{dayName}, {dayOfMonth} {monthName}</p>
         </div>
