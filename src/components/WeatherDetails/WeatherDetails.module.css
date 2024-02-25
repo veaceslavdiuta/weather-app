@@ -1,10 +1,10 @@
 .weatherDetails {
-  width: 790px;
-  height: 330px;
+  width: 70%;
   box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.5);
   border-radius: 30px;
   background: #d9d9d9;
   display: flex;
+  align-items: center;
   padding: 20px;
 }
 
@@ -54,11 +54,7 @@
   display: flex;
   gap: 7px;
   justify-content: center;
-}
-
-.sunsetSunrise img {
-  width: 48px;
-  height: 48px;
+  align-items: center;
 }
 
 .textTime {
@@ -85,9 +81,15 @@
 }
 
 .weatherIcon {
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.weatherIcon img {
+  width: 100%;
 }
 
 .weatherIcon h4 {
@@ -98,19 +100,13 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-bottom: 20px;
-}
-
-.weatherIcon img {
-  width: 270px;
-  height: 270px;
 }
 
 .extraDetails {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: flex-end;
   row-gap: 30px;
   width: 50%;
 }
@@ -121,11 +117,6 @@
   flex-direction: column;
   align-items: center;
   gap: 5px;
-}
-
-.details img {
-  width: 58px;
-  height: 58px;
 }
 
 .details h5 {
@@ -146,4 +137,114 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+@media screen and (max-width: 991px) {
+  .weatherDetails {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainDetails h4 {
+    font-size: 75px;
+  }
+
+  .mainDetails p {
+    font-size: 16px;
+  }
+
+  .mainDetails p span {
+    font-size: 27px;
+  }
+
+  .textTime h5 {
+    font-size: 18px;
+  }
+
+  .textTime p {
+    font-size: 15px;
+  }
+
+  .weatherIcon h4 {
+    font-size: 28px;
+  }
+
+  .details h5 {
+    font-size: 14px;
+  }
+
+  .details p {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .weatherDetails {
+    flex-wrap: wrap;
+    row-gap: 20px;
+    padding: 10px;
+    align-items: flex-end;
+  }
+
+  .extraDetails {
+    width: 100%;
+  }
+
+  .mainDetails {
+    align-items: center;
+  }
+
+  .mainDetails h4 {
+    font-size: 54px;
+  }
+
+  .mainDetails p {
+    font-size: 11px;
+  }
+
+  .mainDetails p span {
+    font-size: 15px;
+  }
+
+  .sunsetSunrise img {
+    width: 40px;
+    height: 31px;
+  }
+
+  .textTime h5 {
+    font-size: 13px;
+  }
+
+  .textTime p {
+    font-size: 11px;
+  }
+
+  .weatherIcon img {
+    width: 170px;
+  }
+
+  .weatherIcon h4 {
+    font-size: 20px;
+  }
+  .extraDetails {
+    justify-content: space-around;
+  }
+
+  .details {
+    width: auto;
+  }
+
+  .details img {
+    width: 40px;
+  }
+
+  .details h5 {
+    font-size: 12px;
+  }
+
+  .details p {
+    font-size: 12px;
+  }
+
 }

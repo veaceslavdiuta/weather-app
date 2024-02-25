@@ -8,19 +8,33 @@
 
 .weatherApp {
   display: flex;
+  flex-direction: column;
+  gap: 30px;
   justify-content: center;
+  align-items: center;
   width: 100%;
   background: linear-gradient(113deg, #fff 0.28%, rgba(70, 97, 115, 0) 178.65%);
+}
+
+.geolocationError {
+  color: red;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-self: center;
+  margin-top: 30px;
+  text-align: center;
 }
 
 .weatherAppContainer {
   display: flex;
   flex-direction: column;
-  gap: 49px;
-  max-width: 1512px;
+  gap: 30px;
+  max-width: 1280px;
   width: 100%;
-  margin-top: 63px;
-  margin-bottom: 63px;
+  padding: 50px;
   height: auto;
   background: linear-gradient(113deg, #fff 0.28%, rgba(70, 97, 115, 0) 178.65%);
 }
@@ -28,17 +42,46 @@
 .firstSide {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 50px;
+  gap: 30px;
+  width: 100%;
 }
 
 .secondSide {
   display: flex;
   justify-content: center;
-  gap: 61px;
+  gap: 30px;
+  width: 100%;
 }
 
 .message {
   font-size: 30px;
-  color:darkslategrey;
+  color: darkslategrey;
+  font-family: Poppins;
+  text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+  .weatherAppContainer {
+    padding: 20px;
+  }
+  .firstSide {
+    flex-direction: column;
+  }
+  .secondSide {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .weatherDetails {
+    width: 100%;
+  }
+
+  .message {
+    font-size: 23px;
+  }
+
+  .geolocationError {
+    font-size: 23px;
+  }
 }

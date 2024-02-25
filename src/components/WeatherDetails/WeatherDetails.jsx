@@ -22,11 +22,9 @@ function WeatherDetails(props) {
     return (
         <div className={classes.weatherDetails}>
             <div className={classes.mainDetails}>
-                <div>
                     <h4>{temp}°C</h4>
 
                     <p>Feels like: <span>{feelsLike}°C</span></p>
-                </div>
 
                 <div className={classes.sunsetSunrise}>
                     <img src={imgSunrise} alt="imgSunrise" />
@@ -56,19 +54,19 @@ function WeatherDetails(props) {
             <div className={classes.extraDetails}>
                 <div className={classes.details}>
                     <img src={imgHumedityIcon} alt="imgHumedityIcon" />
-                    <p>{props.data.list[0].main.humidity}</p>
+                    <p>{props.data.list[0].main.humidity}%</p>
                     <h5>Humidity</h5>
                 </div>
 
                 <div className={classes.details}>
                     <img src={imgWindSpeedIcon} alt="imgWindSpeedIcon" />
-                    <p>{props.data.list[0].wind.speed}</p>
-                    <h5>Wind speed</h5>
+                    <p>{props.data.list[0].wind.speed}km/h</p>
+                    <h5>Wind</h5>
                 </div>
 
                 <div className={classes.details}>
                     <img src={imgPressureIcon} alt="imgPressureIcon" />
-                    <p>{props.data.list[0].main.pressure}</p>
+                    <p>{props.data.list[0].main.pressure}hPa</p>
                     <h5>Pressure</h5>
                 </div>
 

@@ -1,12 +1,17 @@
 import classes from "./SearchBar.module.css";
 
-function SearchBar(props) {
+function SearchBar({ handleSearch, setInputValue, errorMessage }) {
     return (
-        <div className={classes.searchBar}>
-            <input type="text" placeholder="Search for your preffered city..." onChange={(event) => props.setInputValue(event.target.value)} />
-
-            <button onClick={() => props.handleSearch()}>Search</button>
-        </div>
+        <form className={classes.form} onSubmit={(e) => handleSearch(e)}>
+            <div className={classes.searchBar}>
+                <input type="text"
+                    style={{ border: errorMessage ? '1px solid red' : 'none' }}
+                    placeholder="Search for your preffered city..."
+                    onChange={(event) => setInputValue(event.target.value)} />
+                <button type="submit">Search</button>
+            </div>
+            {errorMessage && <p className={classes.errorMessage}>{errorMessage}</p>}
+        </form>
     )
 }
 

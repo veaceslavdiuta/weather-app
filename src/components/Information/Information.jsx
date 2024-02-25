@@ -9,7 +9,6 @@ function Information(props) {
     const monthName = months[monthNumber];
     const dayNumber = date.getDay();
     const dayName = daysOfWeek[dayNumber];
-
     const hour = date.getHours();
     const minutes = date.getMinutes();
     const formattedHour = (hour < 10) ? '0' + hour : hour;

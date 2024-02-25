@@ -1,6 +1,6 @@
 .information {
-  width: 510px;
-  height: 330px;
+  width: 30%;
+  padding: 50px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,6 +17,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  text-align: center;
 }
 
 .information h3 {
@@ -35,4 +36,25 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+@media screen and (max-width: 991px) {
+  .information {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .information {
+    padding: 20px;
+  }
+
+  .information h4 {
+    font-size: 26px;
+  }
+
+  .information h3 {
+    font-size: 76px;
+  }
+
 }
